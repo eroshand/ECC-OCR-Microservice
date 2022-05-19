@@ -1,5 +1,4 @@
 ﻿using ECC_OCR_Microservice.Dtos;
-using ECC_OCR_Microservice.Model.PurchaseSale;
 using ECC_OCR_Microservice.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
