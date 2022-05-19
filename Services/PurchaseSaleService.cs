@@ -8,7 +8,7 @@ namespace ECC_OCR_Microservice.Services
     {
         public async Task<PurchaseSaleModel> ReadFileAsync(FileUploadRequestDto fileUploadRequestDto)
         {
-            var fileName = fileUploadRequestDto.File.FileName;
+            var fileName = fileUploadRequestDto.FileName;
             return GetPurchaseSaleModelBasedOnFileType(fileName.Split(".")[0]);
         }
         public PurchaseSaleModel GetPurchaseSaleModelBasedOnFileType(string fileName)

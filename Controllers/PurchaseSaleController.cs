@@ -20,7 +20,7 @@ namespace ECC_OCR_Microservice.Controllers
 
         [HttpPost]
         [Route("readfile")]
-        public async Task<IActionResult> ReadPdfFileAsync(FileUploadRequestDto fileUploadRequestDto)
+        public async Task<IActionResult> ReadPdfFileAsync([FromBody] FileUploadRequestDto fileUploadRequestDto)
         {
             if (!ModelState.IsValid)
             {
